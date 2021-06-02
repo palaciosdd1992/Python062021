@@ -1,0 +1,27 @@
+nav
+{
+    background-color: blue;
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 100%;
+    height: 70px;
+}
+
+#example-relative
+{
+    background-color: red;
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 100%;
+    height: 70px;
+}
+
+#hola
+{
+    background-color: green;
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 100%;
+    height: 70px;
+    padding: 5px 5px 5px 5px;
+}
