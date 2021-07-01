@@ -1,9 +1,49 @@
 body
 {
+    font-family: Arial;
     background-color: grey;
     margin: 0;
+    font-size: 28px;
+    padding: 20px;
 }
 
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+li
+{
+    float: left;
+    border-right: 2px solid #bbb;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active)
+{
+    background-color: rgb(173, 216, 230);
+}
+
+.active
+{
+    background-color: teal;
+}
+ /*
 #image
 {
     background-image: url("/assets/images/Background.jpg");
@@ -11,6 +51,7 @@ body
     background-position: 50% 0;
     background-size: cover;
 }
+*/
 
 nav
 {
@@ -26,6 +67,7 @@ nav
     text-decoration: none;
 }
 
+/*
 b
 {
     font-size: 30px;
@@ -35,7 +77,9 @@ b
     justify-content: space-between;
     align-items: center;
 }
+*/
 
+/*
 #example-relative
 {
     background-color: rgb(128,128,128,0.7);
@@ -56,7 +100,9 @@ b
     height: 70px;
     padding: 5px 5px 5px 5px;
 }
+*/
 
+/*
 .card
 {
     box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2);
@@ -65,22 +111,28 @@ b
     height: 100%;
     border-radius: 10%; 
 }
+*/
 
-.card:hover
+.card-blog:hover
 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
+/*
 .container
 {
     padding: 2px 16px;
 }
+*/
 
-img
+/*
+.card-images
 {
     
     border-radius: 10% 10% 0 0;
 }
+*/
 
 p
 {
@@ -89,12 +141,8 @@ p
     margin: 0;
 }
 
+/*
 h1
-{
-    margin: 0;
-}
-
-h4
 {
     margin: 0;
 }
@@ -115,12 +163,15 @@ h4
     width: 100%;
     background-color: hsl(0deg 0% 0% / 45%);
 }
-
+*/
+/*
 #layer-color-alpha h1
 {
     color: #fff;
 }
+*/
 
+/*
 @media screen and (max-width:500px)
 {
 
@@ -143,14 +194,64 @@ h4
     }
 
 }
+*/
 
-@media screen and (min-width:300px)
+/*
+@media screen and (min-width:600px)
 {
     body{
         background-color: crimson;
     }
 }
+*/
+*
+{
+    box-sizing: border-box;
+}
 
+.leftcolumn
+{
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn
+{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.fakeimg
+{
+    background-color: #aaa;
+    width: 100%;
+    padding: 10px;
+}
+
+.card-blog
+{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer
+{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/*
 .card-box
 {
     display: grid;
@@ -159,4 +260,14 @@ h4
                          'card5 card6 card7 card8';
     grid-gap: 5px;
     grid-row-gap: 10px;
+}
+*/
+
+@media screen and (max-width: 800px)
+{
+    .leftcolumn, .rightcolumn
+    {
+        width: 100%;
+        padding: 0;
+    }
 }

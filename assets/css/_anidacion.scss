@@ -1,0 +1,59 @@
+body
+{
+    font-family: Arial;
+    background-color: grey;
+    margin: 0;
+    font-size: 28px;
+    padding: 20px;
+
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: blue;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+
+    li
+    {
+        float: left;
+        border-right: 2px solid #bbb;
+    }
+
+    li a 
+    {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active)
+    {
+        background-color: rgb(173, 216, 230);
+    }
+
+    .active
+    {
+        background-color: teal;
+    }
+
+    nav
+    {
+        background-color: teal;
+        font-size: 30px;
+        font-family: sans-serif;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 0 0 0;
+        text-decoration: none;
+    }
+}

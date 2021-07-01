@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    
     <!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,92 +19,82 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-primary navbar-light">
-            <ul class="navbar-nav">
-
-                <li class="navbar-brand" href="#">
-                    <img src="./assets/images/caduceus.png" style="width:40px">
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-
-                <li class="form-inline">
-                    <form class="form-inline" action="">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-                        <button class="btn btn-success" type="submit">Buscar</button>
-                    </form>
-                </li>
-            </ul>
-    </nav>
-
-    <div>
-        <b>
-            El sitio de tu salud
-        </b>
+    <div class="header">
+        <img src="./Background.jpg" height = 400px width = 100% alt="">
     </div>
 
-    <div id="example-relative">
-        <div>
-            <b>Diabetes</b>
-            <a>Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum vivamus. Mus dignissim sem aptent metus hendrerit vestibulum ornare venenatis est, tellus felis accumsan litora sapien non 
-                semper ullamcorper diam malesuada, pulvinar hac quisque et habitasse rutrum nulla faucibus. Nam feugiat odio dui per placerat mattis semper curabitur sollicitudin quam, elementum volutpat 
-                duis ac nascetur aenean interdum lacus dictum cum, luctus viverra diam blandit phasellus cursus cras morbi eu.
-                Parturient magnis cras fusce felis ligula nibh tincidunt, cursus conubia leo sem sollicitudin eros nam, morbi metus rutrum accumsan justo non, vehicula vitae tristique aptent ad interdum. 
-                Per volutpat leo euismod proin posuere primis morbi a et mattis tortor magna, dictum aenean libero penatibus risus vel</a>
+    <ul>
+            <li class="navbar-brand" href="#">
+                <img src="./assets/images/caduceus.png"  width = "60" style="vertical-align:bottom">
+            </li>
+            <li style="float:right"><a class = "active" href="#">Home</a></li>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+    </ul>
+
+    <div class = "row">
+        <div class = "leftcolumn">
+
+            <div class = "card-blog">
+                <h2>Diabetes</h2>
+                <h5>Title description, 19 de Junio, 2021</h5>
+                <div class = "fakeimg" style = "height:200px;">Imagen</div>
+                <p>Texto...</p>
+                <p>Sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco.</p>
+            </div>
+
+            <div class = "card-blog">
+                <h2>Osteoporosis</h2>
+                <h5>Title description, 19 de Junio, 2021</h5>
+                <div class = "fakeimg" style = "height:200px;">Imagen</div>
+                <p>Texto...</p>
+                <p>Sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco.</p>
+            </div>
         </div>
+
+        <div class = "rightcolumn">
+            <div class="card-blog">
+                <h2>Acerca del Autor</h2>
+                <div class = "fakeimg" style="height:100px;">Imagen</div>
+                <p>I am the bone of my sword.
+                    Steel is my body, and fire is my blood.
+                    I have created over a thousand blades.
+                    Unknown to Death.
+                    Nor known to Life.
+                    Have withstood pain to create many weapons.
+                    Yet, those hands will never hold anything.
+                    So as I pray, unlimited blade works.
+                </p>
+            </div>
+    
+            <div class="card-blog">
+                <h3>Posts Populares</h3>
+                <div class="fakeimg">Imagen</div><br>
+                <div class="fakeimg">Imagen</div><br>
+                <div class="fakeimg">Imagen</div><br>
+            </div>
+    
+            <div class="card-blog">
+                <h3>Sigueme</h3>
+                <a href="">Facebook</a>
+            </div>
+        </div>  
+            
     </div>
 
-    <section id = "hero-home">
-        <div id = "layer-color-alpha">
-            <h1>Hola Mundo!!</h1>
-        </div>
-    </section>
-
-    <div class = "card-box">
-            <div class = "card">
-                <img src = "/assets/images/diabetes.png" alt = "Avatar" width ="300" height ="500">
-                <div class = "container">
-                    <h4><b>Diabetes</b></h4>
-                    <p>100 temas</p>
-                    <a href= "">Ver resultados</a>
-                </div>
-            </div>
-
-            <div class = "card">
-                <img src = "/assets/images/cardiovascular.png" alt = "Avatar" width ="300" height ="500">
-                <div class = "container">
-                    <h4><b>Cardiovascular</b></h4>
-                    <p>85 temast</p>
-                    <a href= "">Ver resultados</a>
-                </div>
-            </div>
-
-            <div class = "card">
-                <img src = "/assets/images/obesity.png" alt = "Avatar" width ="300" height ="500">
-                <div class = "container">
-                    <h4><b>Obesidad</b></h4>
-                    <p>134 temas</p>
-                    <a href= "">Ver resultados</a>
-                </div>
-            </div>
+    <div class = "footer">
+        <h2>Footer</h2>
     </div>
-    <!--
-    <div id = "hola">
-        <p>Hola mundo!</p>
-    </div>
-
-    <div id = "example-relative">
-        <p>Primer Parrafo del proyecto</p>
-    </div> -->
 </body>
 </html>
